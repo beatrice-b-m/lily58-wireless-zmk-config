@@ -41,7 +41,7 @@
             display-name = "Lower";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans     &trans     &trans    &trans    &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                              &kp MINUS  &kp UNDER  &trans    &trans    &trans  &trans
+&trans      &trans        &tog 3        &trans        &trans        &trans                              &kp MINUS  &kp UNDER  &trans    &trans    &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans                              &kp EQUAL  &kp LBKT   &kp LPAR  &kp LBRC  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &kp PLUS   &kp RBKT   &kp RPAR  &kp RBRC  &trans  &trans
                                         &trans        &trans        &trans        &trans      &trans    &trans     &kp DEL    &trans
@@ -63,6 +63,16 @@
 &trans  &kp EXCL  &kp AT           &kp HASH     &kp DOLLAR  &kp PRCNT                                  &trans  &kp LEFT  &kp DOWN      &kp UP    &kp RIGHT  &kp K_MUTE
 &trans  &kp AMPS  &kp KP_MULTIPLY  &kp KP_PLUS  &kp MINUS   &kp UNDERSCORE  &kp LPAR    &kp RPAR       &trans  &trans    &kp C_REWIND  &kp C_FF  &kp C_PP   &trans
                                    &trans       &trans      &trans          &trans      &kp LS(ENTER)  &trans  &trans    &trans
+            >;
+        };
+
+        windows_ctrl_remap {
+            bindings = <
+&trans     &trans  &trans  &trans  &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LMETA  &trans  &trans  &trans  &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &kp LCTRL  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
